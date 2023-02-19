@@ -30,7 +30,13 @@ article, aside{
     height: 300px;
     padding: 1rem;
 }
-
+li{
+    padding-bottom: 2em;   
+}
+li a{
+    color: white;
+    font-size: 20px;
+}
 nav, footer, section{
     background-color: lightblue;
 }
