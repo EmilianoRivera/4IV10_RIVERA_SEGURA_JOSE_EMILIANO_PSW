@@ -1,0 +1,114 @@
+/*
+PALETA DE COLORES: 
+
+#125E8A
+#EF5B5B
+#20A39E
+#F7F7F2
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    
+}
+/*MODIFICACIONES AL DIV, HEADER Y AL MAIN*/
+
+#main-title{
+    text-align: center;   
+    background-color:#20A39E; 
+    padding: 30px;
+    color: white;
+}
+main{
+    margin: 5px 20px;
+    
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.sec-general > header{
+    padding: 1%;
+}
+.sec-exp > header{
+    padding: 1%;
+}
+.sec-general > article > ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+li{
+    padding-bottom: 2ex;
+    color: white;
+}
+
+.sec-exp{
+    padding: 2%;
+}
+.art-exp{
+    padding: 2%;
+    text-align:center;
+}
+.sec-general, .art-general{
+    background-color:#125E8A ;
+   
+}
+
+.sec-exp, .art-exp{
+    background-color:#EF5B5B;
+    color: white;
+}
+
+
+
+.sec-skills > header{
+    background-color: #20A39E;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.art-blandas{
+    background-color: #125E8A;
+    float: left;
+    width: 50%;
+    
+    height: 220px;
+}
+.art-duras{
+    background-color: #EF5B5B;
+    float: right;
+    width: 50%;
+    height: 220px;
+}
+
+h3{
+    padding: 2%;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.sec-skills > .art-blandas > ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.sec-skills > .art-duras > ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer{
+    background-color:#F7F7F2 ;
+    color: black;
+    margin: 5px 20px;
+    text-align: center;
+}
