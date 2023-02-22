@@ -39,7 +39,7 @@ form{
 }
 
 form .grupo{
-    position: ab;
+    position: absolute;
     margin: 45px;
     background: #dabebe;
 }
