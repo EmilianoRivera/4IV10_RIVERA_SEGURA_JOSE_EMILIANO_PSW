@@ -4,29 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/styleregistro.css">
+        <link rel="stylesheet" href="./CSS/registro.css">
+       <!--<link rel="stylesheet" href="./CSS/styleregistro.css">--> 
         <title>REGISTRO</title>
     </head>
     <body>
-        <form action="" id="form">
-            <div class="form">
+        <div class="container">
+            <form action="" class="form">
                 <h1>Registro</h1>
                 <div class="grupo">
-                    <input type="text" name="" id="name" required> <span class="barra"> </span>
-                    <label for="">Nombre</label>
+                    
+                    <input type="text" class="input"name="" id="name" placeholder="Nombre" required>
+                    <label class="label"  for="">Nombre</label>
                 </div>
 
                 <div class="grupo">
-                    <input type="email" name="" id="name" required> <span class="barra"> </span>
-                    <label for="">email</label>
+                    
+                    <input type="text"class="input" name="" id="appat"  placeholder="Apellido Paterno" required>
+                    <label class="label"  for="">Paterno</label>
                 </div>
 
                 <div class="grupo">
-                    <input type="password" name="" id="name" required> <span class="barra"> </span>
-                    <label for="">Password</label>
+                   
+                    <input type="text" class="input"name="" id="apmat"  placeholder="Apellido Materno" required>
+                    <label class="label" for="">Materno</label>
+                </div>
+                <div class="grupo">
+                    <input type="password" class="input"name="" id="contra"  placeholder="Contraseña" required>
+                    <label class="label" for="">Contraseña</label>
+                    
                 </div>
 
-                <button type="submit">Suscribirte</button>
+                <div class="grupo">
+                    <input type="password" class="input"name="" id="contra"  placeholder="Confirmar Contraseña" required>
+                    <label class="label" for="">Confirmar Contraseña</label>
+                    
+                </div>
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
 
             </div>
         </form>
