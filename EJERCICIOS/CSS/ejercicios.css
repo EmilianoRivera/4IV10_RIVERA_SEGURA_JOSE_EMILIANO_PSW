@@ -1,0 +1,112 @@
+/*PALETA DE COLORES: 
+
+#E26D5C
+#ECE5F0
+#6E8894
+#232C33
+#8C6057
+
+*/
+*{
+    font-family: 'Helvetica';
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(circle at 56.42% 67.64%, #405652 0, #3f5654 3.57%, #3e5656 7.14%, #3e5658 10.71%, #3e555a 14.29%, #3f555b 17.86%, #3f555d 21.43%, #41545e 25%, #43545f 28.57%, #455360 32.14%, #475360 35.71%, #495260 39.29%, #4c5160 42.86%, #4e5160 46.43%, #51505f 50%, #544f5e 53.57%, #564f5d 57.14%, #584e5b 60.71%, #5a4e5a 64.29%, #5c4d58 67.86%, #5e4d56 71.43%, #5f4c54 75%, #604c52 78.57%, #614c50 82.14%, #614c4e 85.71%, #614c4c 89.29%, #614d4a 92.86%, #614d49 96.43%, #604d47 100%);
+    color: rgb(255, 255, 255);
+   /* border: rgb(255, 255, 255) 2px solid;*/
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(35, 44, 51, 0.238);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*-----------------------PROBLEMA 1-----------------*/
+/*.prom1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    border: solid 3px white;
+}*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 10fr)   ;
+    grid-template-rows:repeat(5, 4fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .prom1, .prom2, .prom3 , .prom4 , .prom5 ,.prom6 ,.prom7, .prom8, .prom9 , .prom10  {
+    display: grid;
+    grid-template-rows: 100px 300px;
+    text-align: center;
+   /* border: rgb(255, 255, 255) 2px solid;*/
+    width: 300px;
+    height: 400px;
+    padding: 100px;
+  
+  }
+
+  /*--------------------form-1---------------------*/
+.prom1 > .form-1, .form-2, .form-3, .form-4, .form-5, .form-6, .form-7, .form-8, .form-9, .form-10, h1{
+    border: rgb(255, 255, 255) 2px solid;
+    background-color: rgba(35, 44, 51, 0.467);
+}
+.label{
+    position: absotule;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.label1{
+    position: absotule;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.input4{
+    position: absotule;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+.input{
+    position: absotule;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+.input:focus{
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    
+}
+.input:hover{
+    background-color:  rgba(35, 44, 51, 0.238);
+    transform: translateY(-2px);
+
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    font-weight: 100px;
+}
+
+ 

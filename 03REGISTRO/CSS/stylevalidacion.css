@@ -1,0 +1,32 @@
+/*PALETA DE COLORES: 
+
+#E26D5C
+#ECE5F0
+#6E8894
+#232C33
+#8C6057
+
+*/
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 56.42% 67.64%, #405652 0, #3f5654 3.57%, #3e5656 7.14%, #3e5658 10.71%, #3e555a 14.29%, #3f555b 17.86%, #3f555d 21.43%, #41545e 25%, #43545f 28.57%, #455360 32.14%, #475360 35.71%, #495260 39.29%, #4c5160 42.86%, #4e5160 46.43%, #51505f 50%, #544f5e 53.57%, #564f5d 57.14%, #584e5b 60.71%, #5a4e5a 64.29%, #5c4d58 67.86%, #5e4d56 71.43%, #5f4c54 75%, #604c52 78.57%, #614c50 82.14%, #614c4e 85.71%, #614c4c 89.29%, #614d4a 92.86%, #614d49 96.43%, #604d47 100%);
+    color: white;
+    font-family: 'Helvetica';
+}
+
+
+.content-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.formulario{
+    background-color:#ECE5F0 ;
+}
+
+

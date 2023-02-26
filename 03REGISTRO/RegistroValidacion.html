@@ -4,34 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylevalidacion.css">
     <title>Registro</title>
     <script src = "./JS/validación.js"></script>
 </head>
 <body>
-    <p>
-        Existen dos métodos principales para la 
-        ontención de los datos dentro de un
-        formulario web, para lo cual aquí lo 
-        explicaremos:
-    </p>
-    <br>
-    <h1>GET: </h1> Este método es el stándar cómo 
-    salida del navegador mediante el cual se resuelve
-    una petición por parte del cliente, así mismo en 
-    la salida estándar(url), se puede visualizar los 
-    datos enviados mediante el formulario.
-    <br>
-    <h1>POST: </h1> Este método es el más utilizazdo 
-    para el envío de información desde un formulario 
-    atendiedo una petición por parte del cliente, 
-    actuando para poder agregar o insertar nuevos 
-    datos en una DB,así mismo a diferencia del método GET, 
-    este utiliza un tipo de seguridad, mediante el cual 
-    la información no es visible por medio de la salida 
-    estándar del navegador.
-    <br>
-
-    <div class = "container">
+    <header>
+        <h1>VALIDACION DE FORMULARIOS</h1>
+    </header>
+    <main class="">
+        <section class="content">
+            <p>
+                Existen dos métodos principales para la 
+                ontención de los datos dentro de un
+                formulario web, para lo cual aquí lo 
+                explicaremos:
+            </p>
+            <article class="art-get">
+                <h1>GET: </h1> 
+                <p>
+                Este método es el stándar cómo 
+                salida del navegador mediante el cual se resuelve
+                una petición por parte del cliente, así mismo en 
+                la salida estándar(url), se puede visualizar los 
+                datos enviados mediante el formulario.
+                </p>
+             
+            </article>
+            <article class="art-post">
+                
+                <h1>POST: </h1> 
+                <p>
+                Método es el más utilizazdo 
+                para el envío de información desde un formulario 
+                atendiedo una petición por parte del cliente, 
+                actuando para poder agregar o insertar nuevos 
+                datos en una DB,así mismo a diferencia del método GET, 
+                este utiliza un tipo de seguridad, mediante el cual 
+                la información no es visible por medio de la salida 
+                estándar del navegador.
+                </p> 
+            
+            </article>
+    
+        </section>
+    </main>
+   
         <div class = "content-formulario">
             <form name = "formulario" method = "get" onsubmit = "return validar(this)">
                 <br>
@@ -63,11 +81,14 @@
 
             </form>
         </div>
+       <!--
         <div class = "tarea">
             Quiero que se valide el campo de fecha para 
             que no existan años superiores al actual
              así como tampoco años con el 31 de febrero
         </div>
-    </div>
+
+       --> 
+  
 </body>
 </html>

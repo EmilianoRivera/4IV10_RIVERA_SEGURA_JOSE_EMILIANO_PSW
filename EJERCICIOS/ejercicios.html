@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/ejercicios.css">
+    <title>EJERCICIOS JS</title>
+</head>
+<body>
+    <header>EJERCICIOS DE VALIDACION</header>
+    <div class="container">
+        <!--Deberan de realizar los ejercicios de validacion, operacion, asignacion y elementos de CSS
+            correspondiente al problema planteado del documento de los 10 ejercicios-->
+        <div class="prom1">
+            <!--
+            Suponga que un individuo desea invertir un capital en un banco
+            y desea saber cuanto ganara despues de un mes si el banco paga
+            a razon de 2% mensual por 36 meses 
+        -->
+        <h1>Ejercicio 1</h1>
+        
+        <form method="get" name="form_uno" class="form-1" onsubmit="return val1(this)">
+            <label class="label">Cantidad a invertir: </label>
+            <input type="number"name="inversion"  class="input" placeholder="Inversion" name="inversion" min="1"max="999999"><br>
+            <label class="label">La ganancia es de: </label>
+            <input type="text" name="ganancia" class="input" placeholder="Ganancia"name="ganancia" id="ganancia1"readonly="readonly"> 
+            <input type="reset" class="reset" name="borrar" value="Restaurar">
+            <input type="submit" class="submit"name="enviar"value="Enviar">
+        </form>
+            
+            
+
+        </div>
+        <div class="prom2">
+            <!--Un vendedor recibe un sueldo base mas un 35% extra por comision de sus ventas. El vendedor desea saber cuanto dinero 
+            obtendrá por concepto de comisiones por las 5 ventas que realiza en el mes, asi mismo se hace un descuento de 12% por concepto
+            de impuesto para lo cual desea saber el total que recibira como cobro-->
+            <h1>Ejercicio 2</h1>
+           
+            <form method="get" name = "form_dos" class="form-2" onsubmit="return val2(this)">
+                <label class="label">Ingrese Sueldo:</label>
+                <input type="number" class ="input"placeholder="Sueldo"name="sueldo" min="1"max="999999"><br>
+                <label class="label">La ganancia es de: </label>
+                <input type="text" class ="input" placeholder="Ganancia" name="ganancia" id="ganancia" readonly="readonly"> 
+                <input type="reset" class="reset" value="Restaurar">
+                <input type="submit" class="submit" value="Enviar">
+             </form>
+
+        </div>
+        <div class="prom3">
+            <!--
+                Se le solicita un sistema a la tienda el cual deben ingresar nombre del producto, marca, tipo, precio, si el producto es papas recibe un 2%
+                de descuento, si el producto es pastelito recibe 10% de descuento, si el producto es un lacteo recibe un 7.5% de descuento
+                se debera de saber cuanto debera de pagar por el producto
+            -->
+            <h1>Ejercicio 3</h1>
+           
+           <form method="get" name="form_tres" class="form-3" onsubmit="return val3(this)">
+             
+                <label class="label">Ingrese el producto: </label>
+                <input type="text" class ="input"placeholder="producto"name="producto" min="1"max="10"><br>
+                <label class="label">Total a pagar: </label>
+                <input type="text" class="input" placeholder="Pago"name="pago" id="pago" readonly="readonly"> 
+                <input type="reset" class="reset" value="Restaurar">
+                <input type="submit" class="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <div class="prom4">
+            <!--Un alumno desea saber cual sera su calificacion final en la materia de Algoritmos. Dicha calificacion se compone 
+            de los siguientes porcentajes: 
+            55% del promedio de sus tres calificaciones parciales
+            30% de la calificacion del examen final
+            15% de la calificacion de un trabajo final-->
+            <h1>Ejercicio 4</h1>
+           
+           <form method="get" name="form_cua" class="form-4" onsubmit="return val4(this)">
+                <label class="label1" >Calificacion 1: </label>
+                <input type="number" class="input4" placeholder="Calificacion 1" name="calificacion_uno" id="ca1" required><br>
+
+                <label class="label1">Calificacion 2: </label>
+                <input type="number" class="input4" placeholder="Calificacion 2"name="calificacion_dos" id="cal2" required> 
+
+                <label class="label1">Calificacion 3: </label>
+                <input type="number" class="input4" placeholder="Calificacion 3"name="calificacion_tres" id="cal3" required> 
+
+                <label class="label1">Examen Promedio: </label>
+                <input type="number" class="input4" placeholder="Examen "name="examen" id="examen" required> 
+
+                <label class="label1">Trabajo Final: </label>
+                <input type="number" class="input4" placeholder="Proyecto"name="proyecto" id="proyecto" required> 
+
+                <label class="label">Promedio:  </label>
+                <input type="text" class="input" placeholder="Promedio"name="promedio" id="promedio" readonly="readonly"> 
+
+                <input type="reset" class="reset" value="Restaurar">
+                <input type="submit" class="submit" value="Enviar">
+            </form>
+        </div>
+
+
+        <!--
+            Un maestro desesa saber el porcentaje de hombres y mujeres, de ahi obtener el 100% y graficar
+        -->
+
+        <div class="prom5">
+            <h1>Ejercicio 5</h1>
+           
+           <form method="get" class="form-5" name="form_cinc"onsubmit="return val5(this)">
+            <label class="label1">Total de alumnos: </label>
+            <input type="number" class="input4" placeholder="Total"name="totala" id="totala" required> 
+
+            <label class="label1">Hombres: </label>
+            <input type="number" class="input4" placeholder="Hombres"name="hombres" id="hombres" required> 
+            <br>
+            <label class="label1">Mujeres: </label>
+            <input type="number" class="input4" placeholder="Mujeres"name="mujeres" id="mujeres" required> 
+            <br>
+            <label class="label">Porcentaje  </label>
+            <input type="text" class="input" placeholder="Porcentaje"name="porcentaje" id="porcentaje" readonly="readonly"> 
+
+            <input type="reset" class="reset" value="Restaurar">
+            <input type="submit" class="submit" value="Enviar">
+            </form>
+        </div>
+
+
+        <div class="prom6">
+            <!--Realizar un algoritmo que calcule la edad de una persona-->
+            <h1>Ejercicio 6</h1>
+           
+           <form action="" class="form-6">
+                <label for="" class="label">Cantidad a invertir: </label>
+                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
+                <label for="" class="label">La ganancia es de: </label>
+                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="prom7">
+            <!--
+                Leer dos numeros:
+                1- si son iguales que los multiplique
+                2- si el primero es mayor que el segumdo hacer un potencia
+                3- si el segundo es mayor que el primero que los divida
+            -->
+            <h1>Ejercicio 7</h1>
+           
+           <form action="" class="form-7">
+                <label for="" class="label">Cantidad a invertir: </label>
+                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
+                <label for="" class="label">La ganancia es de: </label>
+                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="prom8">
+            <!--
+                Leer tres números diferentes e imprimir el numero mayor de los tres 
+            -->
+            <h1>Ejercicio 8</h1>
+           
+           <form action="" class="form-8">
+                <label for="" class="label">Cantidad a invertir: </label>
+                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
+                <label for="" class="label">La ganancia es de: </label>
+                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="prom9">
+            <!--
+                Determinar la cantidad de dinero que recibira u trabajador por concepto de las horas extras trabajadas en una empresa, 
+                sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras y que estas se pagan al doble
+                de una hora normal cuando no exceden de 8; si las horas extras exceden de 8 se pagan las primeras 8 de lo que se pagan las horas
+                normales y el resto al triple 
+            -->
+            <h1>Ejercicio 9</h1>
+           
+           <form action="" class="form-9">
+                <label for="" class="label">Cantidad a invertir: </label>
+                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
+                <label for="" class="label">La ganancia es de: </label>
+                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
+
+            </form>
+        </div>
+        <div class="prom10">
+            <!--
+                Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje 
+                de su salario mensual que depende  de su antiguedad en la empresa de acuerdo con la sig. Tabla
+
+                Tiempo                          Utilidad
+                menos de 1 año              5% del salario
+                2 años o mas y menos de 5   7% del salario
+                5 años o mas y menos de 10  10% del salario
+                10 años o mas               20% 
+
+            -->
+            <h1>Ejercicio 10</h1>
+           
+           <form action="" class="form-10">
+                <label for="" class="label">Cantidad a invertir: </label>
+                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
+                <label for="" class="label">La ganancia es de: </label>
+                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
+                <button type="reset" class="reset">Restaurar</button>
+                <button type="submit" class="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./JS/ejercicios.js"></script>
+</body>
+</html>

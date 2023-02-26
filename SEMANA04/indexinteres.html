@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleinteres.css">
+    <title>EJEMPLOS DE INTERES</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="formulario" method="get">
+            <label>FORMULARIO PARA EL CALUCLO DE FUNCIONES DE INTERES AL 2% MENSUAL
+                DEL BANCO PATITOS QUE DICEN MIAU MIAU
+            </label>
+            <br>
+            <div class="table-container">
+                <table id="tabla" class="tablai">
+                    <tr>
+                        <td>Introduce la cantidad que desea invertir</td><!--AGREGAR COLUMNA-->
+                        <td><input type="text" id="cantidad"onkeypress="return validarn(event)" ></td>
+                    </tr><!--AGREGAR FILA-->
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="invertir" value ="calcular interes"onclick="return interes()"></td>
+                    </tr>
+                    <tr>
+                        <td>Su sueldo total con i interes del 2% mensual es de: </td>
+                        <td><input type="text" name="sueldoi" id="cantidadi" readonly="readonly"7
+                            class="input_text"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" name="borrar" value="Borrar datos " onclick="return borrard()"> 
+                            <!--NO DEBE SER IGUAL EL NOMBRE DEL ELEMENTO Y LA FUNCION-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <script src="./JS/interes.js"></script>
+    </div>
+</body>
+</html>
