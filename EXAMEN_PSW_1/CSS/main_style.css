@@ -1,0 +1,89 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(11,61,89,1) 56%, rgba(1,117,156,1) 76%, rgba(153,177,182,0.6516807406556373) 100%); 
+    text-align: center;
+}
+header{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.741);
+}
+.container{
+    margin-top: 5rem;
+}
+.interes_compuesto{
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+table{
+    display: flex;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.743);
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+input[type="number"]{
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.57);
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 117, 255);
+  }
+input[type="text"]{
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.57);
+    background: none;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 117, 255);
+}
+input[type="button"]{
+    padding: 1rem;
+    color: rgba(0, 0, 0, 0.57);
+    background: none;
+    border: none;
+    width: 100%;
+    
+}
+td {
+    padding-bottom: 1rem;
+}
+input[type=button]{
+    background-color: white;
+    color: black;
+}
+input[type=button]:hover {
+    background-color: #3f87a6;
+    color: black;
+}
+input[type=button]:active{
+    background-color:  #ffffffa1 ;
+}
+
+.datos_tabla > thead > tr > td{ 
+   width: 300px;
+   border-right: solid 1px black;
+   border-left: solid 1px black;
+    border-bottom: solid 1px black;
+}
+.datos_tabla > tbody > tr > td{
+    width: 300px;
+    border-left: solid 1px black;
+   border-right: solid 1px black;
+}

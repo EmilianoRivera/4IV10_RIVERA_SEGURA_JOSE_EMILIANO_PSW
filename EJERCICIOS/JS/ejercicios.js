@@ -12,7 +12,7 @@ const descuentos = {
 //(inversion > 0.0) && (inversion <1000000.0)
 function val1 (){
     inversion = parseFloat(form_uno.inversion.value);
-    if((validaciones.inversionlimite.test(inversion)) && (inversion.length > 0) && (inversion.length <=6) && (inversion>0) && (inversion <999999)){
+    if((validaciones.inversionlimite.test(inversion)) && (inversion.length > 0) && (inversion.length <=6) && (inversion>0.0) && (inversion <999999.0)){
         ganado = parseFloat(inversion * 0.02);
         total = parseFloat(ganado * 36.0);
         document.getElementById('ganancia1').value +=  `${total}`;
@@ -26,7 +26,7 @@ function val1 (){
 
 function val2 (){
     sueldo = parseFloat(orm_dos.sueldo.value);
-    if((validaciones.inversionlimite.test(sueldo)) && (sueldo.length > 0) && (sueldo.length <=6) && (sueldo>0) && (sueldo <999999)){
+    if((validaciones.inversionlimite.test(sueldo)) && (sueldo.length > 0) && (sueldo.length <=6) && (sueldo>0.0) && (sueldo <999999.0)){
         sueldo = parseFloat(sueldo);
         comisiones = 0;
         impuesto = 0;
@@ -89,13 +89,13 @@ function val3(){
 }
 
 function val4(){
-    p1 = parseFloat(form_cua.calificacion_uno.value);
-    p2 = parseFloat(form_cua.calificacion_dos.value);
-    p3 = parseFloat(form_cua.calificacion_tres.value);
-    examen = parseFloat(form_cua.examen.value);
+    var p1 = parseFloat(form_cua.calificacion_uno.value);
+    var p2 = parseFloat(form_cua.calificacion_dos.value);
+    var p3 = parseFloat(form_cua.calificacion_tres.value);
+    var examen = parseFloat(form_cua.examen.value);
     pro = parseFloat(form_cua.proyecto.value);
-    if((validaciones.calif.test(p1) && p1 >= 0 && p1 <= 10) && (validaciones.calif.test(p2)  && p2 >= 0 && p2 <=10 )&& (validaciones.calif.test(p3) &&  p3>=0 && p3 <= 10) &&  
-    (validaciones.calif.test(examen) &&  examen >= 0 && examen <= 10 ) && (validaciones.calif.test(pro)  && pro >= 0 && pro <=10)){ 
+    if((validaciones.calif.test(p1) && p1 >= 0.0 && p1 <= 10.0) && (validaciones.calif.test(p2)  && p2 >= 0.0 && p2 <=10.0 )&& (validaciones.calif.test(p3) &&  p3>=0.0 && p3 <= 10.0) &&  
+    (validaciones.calif.test(examen) &&  examen >= 0.0 && examen <= 10.0 ) && (validaciones.calif.test(pro)  && pro >= 0.0 && pro <=10.0)){ 
         parcialf = parseFloat((p1+p2+p3)/3.0);
         promediof = parseFloat((parcialf* .55) + (examen * .30)+(pro * .15));
         document.getElementById("promedio").value += `${promediof}`;
@@ -110,13 +110,13 @@ function val4(){
 
 function val5(){
   
-    total = parseInt(form_cinc.totala.value);
-    totalh = parseInt(form_cinc.hombres.value);
-    totalm = parseInt(form_cinc.mujeres.value);
-    suma = 0.0;
-    calch = 0.0;
-    calcm = 0.0;
-    sump  = totalh + totalm;
+    var total = parseInt(form_cinc.totala.value);
+    var totalh = parseInt(form_cinc.hombres.value);
+    var totalm = parseInt(form_cinc.mujeres.value);
+    var suma = 0.0;
+    var calch = 0.0;
+    var calcm = 0.0;
+    var sump  = totalh + totalm;
     if (validaciones.calif.test(total) && total >= 2 && total <=60 && sump == total){
         calch = (hombres*100)/total;
         calcm = (mujeres*100)/total;
@@ -126,6 +126,25 @@ function val5(){
         alert("No válido");
         return false;
     }
+    form_cinc.porcentaje.focus();
+}
+
+function  val6() {
+    var nacimiento = form_seis.nacimiento.value;
+    var fecha = new Date();
+    var año = fecha.getFullYear();
+    console.log(año);
+    if ((validaciones.calif.test(nacimiento)) && (nacimiento.length == 4) && parseInt(nacimiento) >=1900 && parseInt(nacimiento)< 2024){
+        var edad = año - nacimiento;
+        console.log(edad);
+        document.getElementById('edad').value += `Edad: ${edad}`;
+    }
+    else{
+        alert("No válido");
+        return false;
+    }
+    
+
     form_cinc.porcentaje.focus();
 }
 /*

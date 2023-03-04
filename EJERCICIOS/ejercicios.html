@@ -130,13 +130,15 @@
             <!--Realizar un algoritmo que calcule la edad de una persona-->
             <h1>Ejercicio 6</h1>
            
-           <form action="" class="form-6">
-                <label for="" class="label">Cantidad a invertir: </label>
-                <input type="text" class="input" placeholder="Inversion" name="inversion" id="inversion" ><br>
-                <label for="" class="label">La ganancia es de: </label>
-                <input type="text" class="input" placeholder="Ganancia"name="ganancia" id="ganancia"> 
-                <button type="reset" class="reset">Restaurar</button>
-                <button type="submit" class="submit">Enviar</button>
+           <form method="get" class="form-6" name="form_seis" onsubmit="return val6(this)" >
+                <label for="nacimiento" class="label">Año nacimiento: </label>
+                <input type="number" class="input" placeholder="Año nacimiento" name="nacimiento" id="nacimiento" ><br>
+                <br>
+                <label class="label1">Edad: </label>
+                <input type="number" class="input4" placeholder="Edad"name="edad" id="edad" readonly="readonly"> 
+                <br><br>
+                <input type="reset" class="reset" value="Restaurar">
+                <input type="submit" class="submit" value="Enviar">
             </form>
         </div>
         <div class="prom7">

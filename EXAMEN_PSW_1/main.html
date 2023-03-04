@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main_style.css">
+    <title>EXAMEN PSW</title>
+</head>
+<body>
+    <header>
+        <h1>INTERES COMPUESTO - INVERSION EN TERRENO</h1>
+        <h2>RIVERA SEGURA JOSE EMILIANO 4IV10</h2>
+    </header>
+
+    <div class="container" style="width: 100%; display: flex; justify-content: center;">
+        <table class="interes_compuesto"  >
+            <thead>
+                <tr>
+                    <th> <em>Ingrese los siguientes datos</em></th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Capital Inicial $: </td>
+                    <td><input type="number" name="cap_ini" id="cap_ini" class="" 
+                        placeholder="Capital Inicial" onpaste="return false"></td>
+                </tr>
+                <tr>
+                    <td>Tasa de Interes %: </td>
+                    <td><input type="number" name="tasa_interes" id="tasa_interes" class=""
+                        placeholder="Interes" max="100" min="0.0" onpaste="return false"> </td>
+                </tr>
+                <tr>
+                    <td>Años: </td>
+                    <td><input type="number" name="tiempo" id="tiempo" class=""
+                        placeholder="1 año - 20 años" max="10" min="1" onpaste="return false"></td>
+                </tr>
+                <tr>
+                    <td>Capital final: </td>
+                    <td><input type="text" name="cap_final" id ="cap_final" class=""
+                        placeholder="Capital Final" readonly="readonly" onpaste="return false"></td>
+
+                </tr>
+                <tr>
+                    <td><input type="button" name ="borrar" id="borrar" class=""
+                        value="Borrar"></td>
+                    <td><input type="button" name="calcular" id ="calcular" class=""
+                        value="Calcular" ></td>
+                </tr>
+                
+            </tbody>
+
+        </table>
+        
+    </div>
+    <table class="datos_tabla" id="datos_tabla">
+        <thead>
+            <tr>
+                <td><em># PAGO</em></td>
+                <td><em>Saldo Inicial</em></td>
+                <td><em>Cuota</em></td>
+                <td><em>Interes</em></td>
+                <td><em>Abono a Capital</em></td>
+                <td><em>Saldo Final</em></td>
+
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    <script src="./JS/main.js" defer></script>
+</body>
+</html>
