@@ -22,7 +22,7 @@
             <div class="problema-content">
                 <input type="text" class="problema-input" placeholder="Ingresa las palabras 
                 sepadaras por espacio" id="p1-input">
-                <button type="button" class="problema-button" onclick ="" style="margin-top: 1rem;">
+                <button type="button" class="problema-button" onclick ="problema1()" style="margin-top: 1rem;">
                 Invertir palabras</button>
                 <pre class="problema-output" id="p1-output">
                    Esperando datos ...
@@ -35,7 +35,7 @@
             <!--PROBLEMA 2-->
             <h2 class="problema-title">PROBLEMA 2</h2>
             <h3> 
-                Dados dos vectores <em>v1 = (x1, x2, x3, x4, xn, ), v2(y1, y2, y3, y4, yn</em> 
+                Dados dos vectores <em>v1 = (x1, x2, x3, x4, xn, ), v2(y1, y2, y3, y4, yn)</em> 
                 y teniendo permitido permutar el orden de los elementos de dicho vector,. encontrar
                 el minimo prodcuto escalar entre ambos vectores.
                 <br>
@@ -52,26 +52,26 @@
                                 <th>#</th>
                             </tr>
                          </thead>
-                         <tbody>
+                         <tbody class="var-x">
                             <tr>
                                 <td>X1: </td>
-                                <td><input type="number" class="problema-input" id="Problema 2-X1"> </td>
+                                <td><input type="number" class="problema-input" id="p2-x1"> </td>
                             </tr>
                             <tr>
                                 <td>X2: </td>
-                                <td><input type="number" class="problema-input" id="Problema 2-X2"> </td>
+                                <td><input type="number" class="problema-input" id="p2-x2"> </td>
                             </tr>
                             <tr>
                                 <td>X3: </td>
-                                <td><input type="number" class="problema-input" id="Problema 2-X3"> </td>
+                                <td><input type="number" class="problema-input" id="p2-x3"> </td>
                             </tr>
                             <tr>
                                 <td>X4: </td>
-                                <td><iput type="number" class="problema-input" id="Problema 2-X4"> </td>
+                                <td><input type="number" class="problema-input" id="p2-x4"> </td>
                             </tr>
                             <tr>
                                 <td>X5: </td>
-                                <td><input type="number" class="problema-input" id="Problema 2-X5"> </td>
+                                <td><input type="number" class="problema-input" id="p2-x5"> </td>
                             </tr>
                          </tbody>
                     </table>
@@ -86,23 +86,23 @@
                         <tbody>
                            <tr>
                                <td>Y1: </td>
-                               <td><input type="number" class="problema-input" id="Problema 2-Y1"> </td>
+                               <td><input type="number" class="problema-input" id="p2-y1"> </td>
                            </tr>
                            <tr>
                                <td>Y2: </td>
-                               <td><input type="number" class="problema-input" id="Problema 2-Y2"> </td>
+                               <td><input type="number" class="problema-input" id="p2-y2"> </td>
                            </tr>
                            <tr>
                                <td>Y3: </td>
-                               <td><input type="number" class="problema-input" id="Problema 2-Y3"> </td>
+                               <td><input type="number" class="problema-input" id="p2-y3"> </td>
                            </tr>
                            <tr>
                                <td>Y4: </td>
-                               <td><iput type="number" class="problema-input" id="Problema 2-Y4"> </td>
+                               <td><input type="number" class="problema-input" id="p2-y4"> </td>
                            </tr>
                            <tr>
                                <td>Y5: </td>
-                               <td><input type="number" class="problema-input" id="Problema 2-Y5"> </td>
+                               <td><input type="number" class="problema-input" id="p2-y5"> </td>
                            </tr>
                         </tbody>
                    </table>
@@ -113,7 +113,7 @@
 
 
 
-                <button type="button" class="problema-button" onclick ="" style="margin-top: 1rem;">
+                <button type="button" class="problema-button" onclick ="problema2()" style="margin-top: 1rem;">
                 Calcular vector</button>
                 <pre class="problema-output" id="p2-output">
                     Esperando datos ...
@@ -134,9 +134,9 @@
                     <div class="problema-content">
                         <input type="text" class="problema-input" placeholder="Ingresa las palabras 
                         sepadaras por una coma" id="p3-input">
-                        <button type="button" class="problema-button" onclick ="" style="margin-top: 1rem;">
+                        <button type="button" class="problema-button" onclick ="problema3()" style="margin-top: 1rem;">
                         Contar letras</button>
-                        <pre class="problema-output" id="p1-output">
+                        <pre class="problema-output" id="p3-output">
                             Esperando datos ...
                         </pre>
                     </div>
@@ -144,6 +144,6 @@
         
 
     </div>
-    <script src="logica.jss" defer></script>
+    <script src="logica.js" defer></script>
 </body>
 </html>
