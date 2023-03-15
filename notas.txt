@@ -1,0 +1,47 @@
+GIT MERGE-UNE LAS RAMAS
+REGLA: NUNCA SE HACEN LOS MERGE DIRECTAMENTE AL PRINCIPAL SIN HABER PASADO AL TESTING
+git brach -m
+git checout 
+
+MAIN - SALIDA A PRODUCCIÓN - CÓDIGO FINAL QUE YA NO TIENE ERRORES
+TESTING - VERSION SUPERIOR A LA DE MAIN (VAN TODAS LAS COSAS QUE NO HAN SIDO PROBADAS)
+git checkout main 
+git merge <rama> -> si no sale bien y dice: git request pull
+pull: jalar los cambios del repositorio
+request: comparar los ultimos cambios del repositorio 
+request pull -> compara los dos codigos, y nos dice si hay conflicto 
+pull request 
+
+ACTIVIDAD: 
+pagina sobre culturas (raras)
+TRIBUS: 
+1. PIRAHÁ
+2. BODI
+3. KOROWAY
+4. VADOMA
+5. HULI WIGMEM
+6. PADUANG
+7. NENET
+
+landing page - 4 segmentos: 
+1. pagina principal - info general de la cultura 
+2. primer segmento: caracteristicas ( ubicacion, religion y etnia)
+3. segundo segmento: cultura (monumentos, zonas espirituales - templos)
+4. tercer segmento: leyendas y/o mitos [3]
+5. cuarto segmento: gastronomia 
+
+DIA JUEVES TRAER 10 HOJAS DE COLORES, PRITT, TIJERAS, DIUREX, COLORES, ETC. 
+
+MAIN (LIDER)
+-
+-
+-
+-
+----------caracteres
+----------CUL
+----------LEY
+----------gastronomia
+------------CAR
+REGLAS: 
+1 SOLA HOJA DE css, CLASS= container
+1 SOLA HOJA DE JS, ELEMENTOS DE VIDEO, ELEMENTOS DE IMAGENES, CARRUSEL DE IMAGENES 

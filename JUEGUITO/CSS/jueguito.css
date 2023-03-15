@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes border-animation{
+    0% {border:3px solid rgb(0, 0, 0);} 
+   25% {border:3px solid rgb(6, 0, 123);} 
+   50% {border:3px solid #41359b;} 
+   75% {border:3px solid rgb(9, 35, 90);} 
+  100% {border:3px solid rgb(0, 0, 0);} 
+}
+@keyframes color-txt{
+     0% {color: rgb(0, 0, 0);} 
+    25% {color: rgb(6, 0, 123);} 
+    50% {color: #41359b;} 
+    75% {color: rgb(9, 35, 90);} 
+   100% {color:rgb(0, 0, 0);} 
+}
+@keyframes bg{
+    0% {background-color: rgb(0, 0, 0);} 
+   25% {background-color: rgb(6, 0, 123);} 
+   50% {background-color: #41359b;} 
+   75% {background-color: rgb(9, 35, 90);} 
+  100% {background-color:rgb(0, 0, 0);} 
+}
+@keyframes cambioFondo{
+    0% {background-color: rgb(0, 0, 0);} 
+    15%{background-color:rgb(0, 0, 0)}
+    25% {background-color: rgb(0, 0, 0);} 
+    50% {background-color: #05033d;} 
+    75% {background-color: rgb(0, 0, 0);} 
+   100% {background-color:rgb(0, 0, 0);} 
+}
+.container {
+ 
+  height: 720px;
+  margin-top: 60px;
+  animation-name: border-animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+    
+}
+.iniciar-tempo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    flex-direction: column;
+    height: 720px;
+    animation-name: border-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+h1{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 50px;
+    background-color: rgb(0, 0, 0);
+    transition: background-color .5s;
+}
+h1:hover{
+    animation-name:color-txt;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.iniciar-tempo > .iniciar > #iniciar{
+    background-color: transparent;
+    animation-name: border-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: white;
+    font-weight: 300px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    transition: background-color .5s;
+    border-radius: 10px;
+}
+
+.iniciar-tempo > .iniciar > #iniciar:hover{
+
+    animation-name: bg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.tempoDiv{
+    display: flex;
+    justify-content: center;
+    animation-name: border-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    padding: 25px;
+    width: 96.7%;
+}
+.tempoDiv> #tiempoRestante{
+    
+    font-size: 34px;
+}
+.areaJuego{
+    height: 623.6px;
+    width: 1850.83px;
+}
+
+.circulo {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #7953d2;
+    box-shadow: rgba(0, 0, 0, 0.17);
+}
+
+.enemigo {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #c62828;
+    box-shadow: rgba(0, 0, 0, 0.17) ;
+}
