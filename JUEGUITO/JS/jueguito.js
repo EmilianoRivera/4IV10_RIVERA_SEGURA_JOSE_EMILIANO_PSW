@@ -33,6 +33,7 @@ window.onload = () => {
             this.conteoSeg = function () {
                 if (this.contador == this.final) {
                     this.conteoSeg = null;
+                    alert("FIN DEL JUEGO");
                     window.location.reload();
                     return;
                 }
