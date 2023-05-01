@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <div class="container">
+            <div class="contenedorRegistro">
+                <form method="post" name="formulario" action="guardar">
+                    <label> Nombre: </label>
+                    <br>
+                    <input type="text" name="nombre" >
+                    <br>
+                    <label> Apellido Paterno </label>
+                    <br>
+                    <input type="text" name="appat" >
+                    <br>
+                    <label> Apellido Materno </label>
+                    <br>
+                    <input type="text" name="apmat" >
+                    <br>
+                    <label> Edad</label>
+                    <input type="number" name="edad" >
+                    <br>
+                    <label> Email</label>
+                    <br>
+                    <input type="email" name="correo" >
+                    <br>
+                    <input type="submit" value="Registrar Usuario" >
+                    <input type="reset" value="Borrar Datos" >
+                    
+                </form>
+            </div>
+             <div class="contenedorConsutlar">
+                 <br>
+                 <form name="formularioConsultar" method="get" action="Consultar">
+                     <input type="submit" value="Consultar Tabla General de Usuarios"> 
+                 </form>
+                 
+             </div>
+             <br>
+             <div class="contenedorEliminar">
+                 <br>
+                 <form name="formularioEliminar" method="post" action="Eliminar">
+                     <<label>Ingresa el ID del usuario a eliminar</label>
+                     <input type="text" name="ideliminar" > 
+                     <input type="submit" value="Eliminar Registro"> 
+                     
+                 </form>
+             </div>
+             
+              <br>
+             <div class="contenedorActualizar">
+                 <br>
+                 <label>programar la funcion que se encargue de poder actualizar los datos de un usuario</label>
+                 <form name="formularioEliminar" method="post" action="Eliminar">
+                     <label>Ingresa el ID del usuario a eliminar</label>
+                     <input type="text" name="ideliminar" > 
+                     <input type="submit" value="Eliminar Registro"> 
+                     
+                 </form>
+             </div>
+             
+        </div>
+    </body>
+</html>

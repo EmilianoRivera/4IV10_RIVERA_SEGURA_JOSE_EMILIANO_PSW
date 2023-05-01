@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>MAFER</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+        
+    </head>
+    <body>
+   
+        <h3>Por favor registre sus datos y los de su mascota: </h3>
+
+        <br>
+             
+            <div class="containerMascota">
+                 <form  method="post" name="" action="" id="form1" >
+                     <p>Datos del dueño: </p>
+                     <table border="2" >
+                        <tr>
+                            <td><lable for="nombre">Nombre:</lable></td>
+                            <td><input type="text"  name="nombre" size="45" id="nombre"></td>        
+                        </tr>
+                        <tr>
+                            <td><lable for="appat">Apellido paterno:</lable> </td>
+                            <td><input type="text" name="appat" size="45" id="appat" ></td>        
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="apmat">Apellido Materno:</label> </td>
+                            <td><input type="text" name="apmat" size="45"  id="apmat"></td>        
+                        </tr>
+                        
+                       <tr>
+                            <td><label for="password">Password: </label></td>
+                              <td><input type="password" name="password" size="45"  id="pass"></td>        
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="correo">Email:</label> </td>
+                            <td><input type="text" name="correo" size="45" id="email" ></td>        
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="dir">Dirección:</label> </td>
+                            <td><input type="text" name="dir" size="45" id="direccion"></td>        
+                        </tr>
+<!--                    <tr>
+                        <td colspan="2" ><input type="submit" 
+                            value="Registrar Dueño"></td>
+                        </tr>        -->
+                    </table>
+                     
+                    <p>Datos de la mascota </p>
+             
+                    <table border="2" >
+                        <tr>
+                            <td><label for="nombre_mascota">Nombre: </label></td>
+                            <td><input type="text" name="nombre_mascota" size="45" id="nombre_mascota"></td>        
+                        </tr>
+                       <tr>
+                            <td><label for="tipo_esp">Especie: </label></td>
+                            <td> <select name="tipo_esp"> 
+                                    <option>Perro</option>
+                                    <option>Gato</option>
+                                    <option>Ave</option>
+                                </select> 
+                            </td>        
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="tipo_raza">Tipo de Raza:</label> </td>
+                            <td> <select name="tipo_raza"> 
+                                    <option>Común</option>
+                                    <option>Beagle</option>
+                                    <option>Pastor Alemán</option>
+                                    <option>Labrador Retriever</option>
+                                    <option>Angola</option>
+                                    <option>Siamés</option>
+                                    <option>Canario</option>
+                                    <option>Perico</option>
+                                    <option>Tucán</option>
+                                    <option>Quetzal</option>
+                                </select> 
+                            </td> 
+                            
+                            
+                        </tr>
+                        
+                       <tr>
+                            <td><label for="sexo">Sexo: </label> </td>
+                            <td> <select name="sexo"> 
+                                    <option>Masculino</option>
+                                    <option>Femenino</option>
+                                </select> 
+                            </td>  
+                             
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="fecha_nac">Fecha de Nacimiento: </label> </td>
+                              <td><input type="date" name="fecha_nac" size="45" id="fecha"></td>        
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="pejale">Pelaje: </label> </td>
+                            <td><input type="text" name="pelaje" size="45" id="pelaje"></td>        
+                        </tr>
+                         <tr>
+                            <td><label for="señas">Señas:</label> </td>
+                            <td><input type="text" name="señas" size="45" id="señas"></td>        
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2" ><input type="submit" 
+                            value="Registrar Dueño y Mascota" ></td>
+                        </tr>        
+                    </table>
+                     
+                     
+                 </form>     
+            </div>
+             <br><!-- comment -->
+             
+            
+        </div>
+        <script src="./JS/main.js"></script>
+    </body>
+</html>

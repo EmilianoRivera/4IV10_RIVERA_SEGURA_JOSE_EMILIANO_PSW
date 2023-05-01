@@ -6,10 +6,10 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  *
@@ -39,6 +39,10 @@ public class DatosPersonales extends HttpServlet {
             ///voy a tener una peticion
             nombre = request.getParameter(name:"nom");
             edad = Integer.parseInt(request.getParameter(name:"edad"));
+            
+            //Obtener las ip
+            int iplocal = request.get;
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
